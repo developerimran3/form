@@ -146,16 +146,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="col-md-8">
                 <div class="card shadow">
                     <div class="card-header">
-                        <h2>Team List</h2>
+                        <h2>List</h2>
                     </div>
                     <div class="card-body">
                         <table class="table table-striped table-hover">
                             <thead>
-                                <tr>
+                                <tr class="text121">
                                     <th class="col">id</th>
                                     <th class="col">Name</th>
                                     <th class="col">Email</th>
                                     <th class="col">User</th>
+                                    <th class="col">Location</th>
+                                    <th class="col">Gender</th>
                                     <th class="col">Photo</th>
                                 </tr>
                             </thead>
@@ -172,6 +174,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                     <td><?php echo $user->name; ?></td>
                                     <td><?php echo $user->email; ?></td>
                                     <td><?php echo $user->username; ?></td>
+                                    <td><?php echo $user->gender; ?></td>
+                                    <td><?php echo $user->location; ?></td>
                                     <td><img class="teamPhoto" src="<?php echo $user->photo; ?>" alt=""></td>
                                 </tr>
                                 <?php endforeach; ?>
