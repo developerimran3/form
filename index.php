@@ -104,13 +104,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <label for="">Location</label>
                                 <select name="location" id="" class="form-select <?php echo fieldErr($location); ?>">
                                     <option value="">--select--</option>
-                                    <option <?php echo (old('location') == 'narshingdi') ? 'selected' : ''; ?>
-                                        value="narshingdi">
-                                        Narshingdi</option>
+                                    <option <?php echo (old('location') == 'barishal') ? 'selected' : ''; ?>
+                                        value="barishal">
+                                        Barishal</option>
                                     <option <?php echo (old('location') == 'dhaka') ? 'selected' : ''; ?> value="dhaka">
                                         Dhaka</option>
-                                    <option <?php echo (old('location') == 'gazipur') ? 'selected' : ''; ?>
-                                        value="gazipur">Gazipur</option>
+                                    <option <?php echo (old('location') == 'chittagong') ? 'selected' : ''; ?>
+                                        value="chittagong">Chittagong</option>
                                     <option <?php echo (old('location') == 'narayanjong') ? 'selected' : ''; ?>
                                         value="narayanjong">Narayanjong</option>
                                     <option <?php echo (old('location') == 'brammanbaria') ? 'selected' : ''; ?>
